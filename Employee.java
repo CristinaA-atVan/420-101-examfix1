@@ -20,26 +20,27 @@ public class Employee{
     }
     
     /**
-     * Returns true is an employee is above 16 years old
+     * Returns true if an employee is above 16 years old
      */
     private int calculateAge(int currentYear){
         return (currentYear - yearOfBirth);
     }
 
     /**
-     * Returns true is an employee is above 16 years old
+     * Returns true if an employee is above 16 years old
      * Answer for Question 12
+     * Fixed
      */
     public boolean canDrive(){
         int age = calculateAge(2025);
         int ageDiff = (16 - age);
         if (age>=16){
+            System.out.println("This employee can drive");
             return true;
-            printlf("This employee can drive");
         }
         else{
+            System.out.println("This employee can drive in " + ageDiff + " years");
             return false;
-            printlf("This employee can drive in " + ageDiff + " years");
         }
     }
 
@@ -62,7 +63,7 @@ public class Employee{
      */
     public void paySalary(){
         double pay = calculatePay();
-        System.out.println(fullname + "has received a wire transfer of " + pay + " CAD");
+        System.out.println(fullname + " has received a wire transfer of " + pay + " CAD");
         unpaidHours = 0;
     }
     
