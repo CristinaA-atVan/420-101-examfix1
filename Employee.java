@@ -58,10 +58,11 @@ public class Employee{
     /**
      * Output the payment record and resets unpaid hours
      * Answer for Question 14
+     * Fixed
      */
     public void paySalary(){
-        pay = calculatePay();
-        printlf(fullname + "has received a wire transfer of " + pay + " CAD");
+        double pay = calculatePay();
+        System.out.println(fullname + "has received a wire transfer of " + pay + " CAD");
         unpaidHours = 0;
     }
     
