@@ -58,6 +58,7 @@ public class Employee{
     public void paySalary(){
         pay = calculatePay();
         printlf(fullname + "has received a wire transfer of " + pay + " CAD");
+        unpaidHours = 0;
     }
     
     /**
