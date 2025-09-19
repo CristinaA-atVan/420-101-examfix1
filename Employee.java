@@ -39,7 +39,7 @@ public class Employee{
             return true;
         }
         else{
-            System.out.println("This employee can drive in " + ageDiff + " years");
+            System.out.println("This employee can drive in " + ageDiff + " year(s)");
             return false;
         }
     }
